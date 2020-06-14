@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=JaMCxVWtW58
+
+https://bootswatch.com/yeti/
+https://www.bootstrapcdn.com/bootswatch/
+https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/yeti/bootstrap.min.css
+https://fontawesome.com/
+
+Book class
+Store class
