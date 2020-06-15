@@ -148,6 +148,7 @@ class Store {
     }
 
     static exists(isbn_to_find) {
+        //const book = Store.getBooks().find((item ) => isbn === isbn_to_find)
         const book = Store.getBooks().find(({ isbn }) => isbn === isbn_to_find)
         return book !== undefined;   
     }

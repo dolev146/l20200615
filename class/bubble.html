@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <button class="action-add">ADD</button>
+        <button class="action-edit">EDIT</button>
+        <button class="action-delete">DELETE</button>
+        <button class="action-get">GET</button>
+    </div>
+    <script>
+
+        document.querySelector('.parent').addEventListener('click', e => {
+            console.log("2 -" + e.target)
+        })
+
+        document.querySelector('.action-delete').addEventListener('click', e => {
+            console.log("1 -" + e.target.className)
+            e.cancelBubble = true;
+           
+        })
+        document.querySelector('.action-edit').addEventListener('click', e => {
+            console.log("1 -" + e.target.className)
+        })
+        document.querySelector('.action-get').addEventListener('click', e => {
+            console.log("1 -" + e.target.className)
+        })
+        document.querySelector('.action-add').addEventListener('click', e => {
+            console.log("1 -" + e.target.className)
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
