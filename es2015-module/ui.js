@@ -15,13 +15,15 @@ export default class UI {
             <td>${book.author}</td>
             <td>${book.isbn}</td>
             <td>
+                <a href="#" title="Edit">
                 <i class="fas fa-edit btn btn-primary btn-sm edit" title="EDIT"></i>&nbsp;
+                </a>
                 <a href="#" title="DELETE">
                 <i class='fas fa-trash-alt btn btn-danger btn-sm delete'></i>
                 </a> 
             </td>
         `
-// <i style="font-size: 14px" class="fa btn-danger delete btn-sm">&#xf00d;</i>
+        // <i style="font-size: 14px" class="fa btn-danger delete btn-sm">&#xf00d;</i>
 
         list.appendChild(row)
     }
@@ -52,5 +54,4 @@ export default class UI {
         setTimeout(() => alertDiv.style.opacity = 0, 2500)
         setTimeout(() => alertDiv.remove(), 5000)
     }
-
 }

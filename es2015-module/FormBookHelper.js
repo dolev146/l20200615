@@ -11,6 +11,16 @@ export default class FormBook {
     static get isbn() {
         return document.querySelector('#isbn').value
     }
+    static set title(item) {
+        document.querySelector('#title').value = item
+    }
+
+    static set author(item) {
+        document.querySelector('#author').value = item
+    }
+    static set isbn(item) {
+        document.querySelector('#isbn').value = item
+    }
 
     static getBook() {
         return new Book(FormBook.isbn, FormBook.author, FormBook.title);
